@@ -22,4 +22,5 @@ jobs:
       python-version: "3.13"
       node-version: "20"
       # engine_ref defaults to v1; toolkit_ref defaults to main — no need to set.
-    secrets: inherit
+    secrets: 
+      COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
